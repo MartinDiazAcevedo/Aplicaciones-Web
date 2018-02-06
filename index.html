@@ -1,1 +1,22 @@
-"Hello World"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es">
+<head><title>Prueba</title>
+<script type="text/javascript">
+function makeUppercase() {
+document.form1.outstring.value = document.form1.instring.value.toUpperCase();
+}
+
+
+</script></head>
+<body>
+Convierte el texto que este en minusculas en mayusculas.<br /><br />
+<form name="form1" method="post">
+<input name="instring" type="text" value="conviertelo" size="30">
+<input type="button" name="Convert" value="Conviertelo en Mayúsculas >>" onClick="makeUppercase();">
+<input name="outstring" type="text" value="" size="30">
+</form>
+
+
+</body>
+</html>
